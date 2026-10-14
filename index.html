@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ryan Roumiani — Computer Science &amp; Security</title>
+  <meta name="description" content="Portfolio of Ryan Roumiani — Computer Science student at Simon Fraser University building systems and security software." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ryan Roumiani — Computer Science & Security" />
+  <meta property="og:description" content="Systems and security projects: an ML intrusion detector, a zero-knowledge vault, a Raft key-value store, and more." />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#projects">Skip to projects</a>
+
+  <!-- ░░ NAV ░░ -->
+  <header class="nav" id="top">
+    <a class="nav__brand" href="#top">
+      <span class="nav__mark" aria-hidden="true">RR</span>
+      <span class="nav__name">Ryan Roumiani</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle colour theme">
+      <span class="theme-toggle__dot" aria-hidden="true"></span>
+      <span class="theme-toggle__label">theme</span>
+    </button>
+  </header>
+
+  <main>
+    <!-- ░░ HERO ░░ -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero__prompt" aria-hidden="true">
+        <span class="hero__path">~/ryan</span>
+        <span class="hero__sep">$</span>
+        <span class="hero__cmd">whoami<span class="caret"></span></span>
+      </div>
+      <h1 class="hero__heading" id="hero-heading">
+        I build <span class="accent">secure systems</span> and break them on purpose.
+      </h1>
+      <p class="hero__lede">
+        Computer Science student at Simon Fraser University with a focus on
+        network security, applied cryptography, and the distributed systems
+        underneath both. I like problems where correctness and adversaries
+        both get a vote.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#projects">View the work</a>
+        <a class="btn btn--ghost" href="#contact">Get in touch</a>
+      </div>
+
+      <dl class="hero__stats">
+        <div class="stat">
+          <dt>Focus</dt>
+          <dd>Security &amp; Systems</dd>
+        </div>
+        <div class="stat">
+          <dt>School</dt>
+          <dd>SFU Computing Science</dd>
+        </div>
+        <div class="stat">
+          <dt>Projects shipped</dt>
+          <dd><span data-count="6">6</span></dd>
+        </div>
+        <div class="stat">
+          <dt>Languages</dt>
+          <dd>Py · Go · Rust · C</dd>
+        </div>
+      </dl>
+    </section>
+
+    <!-- ░░ PROJECTS ░░ -->
+    <section class="section" id="projects" aria-labelledby="projects-heading">
+      <div class="section__head">
+        <p class="eyebrow">// selected work</p>
+        <h2 class="section__title" id="projects-heading">Projects</h2>
+        <p class="section__sub">
+          Six builds across security and systems. Each one is a real engineering
+          problem — click any card for the full case study: the threat model,
+          the design decisions, and what I'd do differently.
+        </p>
+      </div>
+
+      <ul class="project-grid" id="projectGrid" aria-label="Projects">
+        <!-- cards injected by script.js -->
+      </ul>
+    </section>
+
+    <!-- ░░ ABOUT ░░ -->
+    <section class="section section--split" id="about" aria-labelledby="about-heading">
+      <div class="section__head">
+        <p class="eyebrow">// background</p>
+        <h2 class="section__title" id="about-heading">About</h2>
+      </div>
+      <div class="about">
+        <div class="about__body">
+          <p>
+            I'm Ryan — a Computer Science student at Simon Fraser University's
+            School of Computing Science. My interest in security started the way
+            a lot of them do: wanting to understand not just how a system is
+            supposed to work, but how it actually behaves when someone pushes on
+            the edges.
+          </p>
+          <p>
+            Most of my projects live at the intersection of <strong>security and
+            systems</strong> — building things that have to stay correct under
+            concurrency, failure, and an active adversary. I care about reading
+            RFCs instead of guessing, measuring instead of assuming, and writing
+            threat models before writing code.
+          </p>
+          <p>
+            Outside the terminal, I've spent years as a <strong>swim
+            instructor and National Lifeguard</strong> at PedalHeads, teaching
+            swimmers of every age and ability. It's where I learned to explain
+            hard things simply, stay calm when stakes are real, and coordinate a
+            team — the same instincts that make me a better engineer.
+          </p>
+        </div>
+        <aside class="about__card" aria-label="At a glance">
+          <h3 class="about__card-title">At a glance</h3>
+          <ul class="kv">
+            <li><span class="kv__k">Education</span><span class="kv__v">Student, Computer Science · Simon Fraser University</span></li>
+            <li><span class="kv__k">Based in</span><span class="kv__v">North Vancouver, BC</span></li>
+            <li><span class="kv__k">Interests</span><span class="kv__v">AppSec · Cryptography · Distributed systems</span></li>
+            <li><span class="kv__k">Languages</span><span class="kv__v">English (fluent) · Farsi (fluent)</span></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ░░ SKILLS ░░ -->
+    <section class="section" id="skills" aria-labelledby="skills-heading">
+      <div class="section__head">
+        <p class="eyebrow">// toolbox</p>
+        <h2 class="section__title" id="skills-heading">Skills</h2>
+      </div>
+      <div class="skills" id="skills-grid">
+        <!-- skill groups injected by script.js -->
+      </div>
+
+      <div class="certs">
+        <h3 class="certs__title">Certifications</h3>
+        <ul class="certs__list">
+          <li>National Lifeguard</li>
+          <li>Standard First Aid — Level C w/ AED</li>
+          <li>Lifesaving Society — Swim Instructor</li>
+          <li>Lifesaving Society — Lifesaving Instructor</li>
+          <li>Bronze Medallion</li>
+          <li>Bronze Cross</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ░░ CONTACT ░░ -->
+    <section class="section section--contact" id="contact" aria-labelledby="contact-heading">
+      <div class="section__head">
+        <p class="eyebrow">// say hello</p>
+        <h2 class="section__title" id="contact-heading">Get in touch</h2>
+        <p class="section__sub">
+          Open to internships, research, and security-focused collaboration.
+          The fastest way to reach me is email.
+        </p>
+      </div>
+
+      <div class="contact">
+        <div class="contact__field">
+          <span class="contact__label">email</span>
+          <code class="contact__value" id="emailValue">ryan.roumiani@gmail.com</code>
+          <button class="copy-btn" type="button" data-copy="ryan.roumiani@gmail.com" aria-label="Copy email address">Copy</button>
+        </div>
+        <div class="contact__links">
+          <a class="btn btn--ghost" href="https://github.com/Modz2" target="_blank" rel="noopener">GitHub ↗</a>
+          <a class="btn btn--ghost" href="#" data-needs-url="linkedin" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a class="btn btn--primary" href="mailto:ryan.roumiani@gmail.com">Email me</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year">2026</span> Ryan Roumiani</span>
+    <span class="footer__meta">Built with HTML, CSS &amp; a little JavaScript · Deployed on GitHub Pages</span>
+  </footer>
+
+  <!-- ░░ PROJECT DETAIL MODAL ░░ -->
+  <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <article class="modal__panel" role="document">
+      <button class="modal__close" type="button" data-close aria-label="Close">✕</button>
+      <div class="modal__content" id="modalContent"><!-- injected --></div>
+    </article>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
